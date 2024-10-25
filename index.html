@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask Your Doubts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ask Your Doubts</h1>
+        <p>Select the type of query, choose the subquery, and ask your doubt!</p>
+    </header>
+
+    <main>
+        <section id="query-form">
+            <h2>Submit Your Query</h2>
+            <div id="success-message">Your query has been submitted successfully!</div>
+            
+            <label for="query-type">Select Type of Query:</label>
+            <select id="query-type">
+                <option disabled selected>-- Select Type --</option>
+                <option value="Algorithms">Algorithms</option>
+                <option value="Web Development">Web Development</option>
+                <option value="App Development">App Development</option>
+                <option value="Data Science">Data Science</option>
+                <option value="Competitive Programming">Competitive Programming</option>
+                <option value="Cloud Computing & DevOps">Cloud Computing & DevOps</option>
+                <option value="Cybersecurity">Cybersecurity</option>
+                <option value="Electronics & Embedded Systems">Electronics & Embedded Systems</option>
+                <option value="Robotics & Automation">Robotics & Automation</option>
+                <option value="Blockchain & Cryptocurrency">Blockchain & Cryptocurrency</option>
+                <option value="Internships & Placements">Internships & Placements</option>
+                <option value="NIT Raipur Specific Doubts">NIT Raipur Specific Doubts</option>
+                <option value="General Programming">General Programming</option>
+                <option value="Technical Tools">Technical Tools</option>
+                <option value="Relationship & Love Issues">Relationship & Love Issues</option>
+                <option value="Exam & Study-Related Issues">Exam & Study-Related Issues</option>
+                <option value="Scholarships & Financial Aid">Scholarships & Financial Aid</option>
+                <option value="Mental Health & Stress Management">Mental Health & Stress Management</option>
+                <option value="Team Projects & Group Work">Team Projects & Group Work</option>
+            </select>
+            
+            <label for="subquery-type">Select Subquery:</label>
+            <select id="subquery-type">
+                <option disabled selected>-- Select Subquery --</option>
+            </select>
+            
+            <textarea id="user-query" placeholder="Describe your doubt here..."></textarea>
+            <button id="submit-query">Submit</button>
+        </section>
+
+        <section id="answers">
+            <h2>Query Answers</h2>
+            <div id="answer-list">
+                <!-- Submitted queries and their responses will be shown here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ask Your Doubts | NITRR</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
